@@ -201,7 +201,7 @@ export default function Home() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
                       <span className="text-yellow-400 mr-2">•</span>
-                      <span>本網站使用佛教文化概念純屬娛樂，無意冒犯任何宗教信仰</span>
+                      <span>本網站使用宗教文化概念純屬娛樂，無意冒犯任何宗教信仰，尊重各宗教的文化</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-yellow-400 mr-2">•</span>
@@ -243,7 +243,7 @@ export default function Home() {
               © 2025 功德充電站
             </p>
           <p className="text-gray-500 text-sm mt-2">
-          本網站使用佛教文化概念純屬娛樂，無意冒犯任何宗教信仰。
+          本網站使用宗教文化概念純屬娛樂，無意冒犯任何宗教信仰，尊重各宗教的文化。
           </p>
         </div>
       </footer>
