@@ -7,7 +7,7 @@ import MeritSystem from '@/components/MeritSystem'
 import RestorationMethods from '@/components/RestorationMethods'
 import AnnouncementModal from '@/components/AnnouncementModal'
 import SuccessToast from '@/components/SuccessToast'
-import { Heart, Zap, Star, Crown, AlertTriangle } from 'lucide-react'
+import { Heart, Zap, Star, Crown, AlertTriangle, Flag } from 'lucide-react'
 
 export default function Home() {
   const [merit, setMerit] = useState(100)
@@ -239,11 +239,25 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-gray-600/30">
         <div className="max-w-6xl mx-auto text-center">
+          <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 mb-4">
             <p className="text-gray-400">
               © 2025 功德充電站
             </p>
-          <p className="text-gray-500 text-sm mt-2">
-          本網站使用宗教文化概念純屬娛樂，無意冒犯任何宗教信仰，尊重各宗教的文化。
+            
+            {/* 檢舉連結 */}
+            <a
+              href="https://forms.gle/SAw9qmN2nkPmyQsTA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 bg-red-500/20 hover:bg-red-500/30 text-red-300 hover:text-red-200 border border-red-500/30 rounded-lg text-sm font-medium transition-all duration-300"
+            >
+              <Flag className="w-4 h-4 mr-2" />
+              檢舉問題 / 意見反饋
+            </a>
+          </div>
+          
+          <p className="text-gray-500 text-sm">
+            本網站使用宗教文化概念純屬娛樂，無意冒犯任何宗教信仰，尊重各宗教的文化。
           </p>
         </div>
       </footer>
