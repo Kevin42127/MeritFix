@@ -63,7 +63,7 @@ export default function AnnouncementModal() {
                 <div className="bg-gray-700/50 rounded-lg p-4 text-sm">
                   <p className="mb-2">⚠️ 注意事項：</p>
                   <ul className="text-left space-y-1">
-                    <li>• 本網站使用佛教文化概念純屬娛樂，無意冒犯任何宗教信仰</li>
+                    <li>• 本網站使用宗教文化概念純屬娛樂，無意冒犯任何宗教信仰，尊重各宗教的文化</li>
                     <li>• 功德值僅為娛樂用途</li>
                     <li>• 不具任何宗教或靈性意義</li>
                     <li>• 請理性看待，避免過度沉迷</li>

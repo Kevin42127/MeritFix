@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X, Heart, Zap } from 'lucide-react'
+import { Menu, X, Heart, Zap, Flag } from 'lucide-react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -49,6 +49,21 @@ export default function Header() {
                 {item.name}
               </motion.a>
             ))}
+            
+            {/* 檢舉連結 */}
+            <motion.a
+              href="https://forms.gle/SAw9qmN2nkPmyQsTA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-3 py-1 bg-red-500/20 hover:bg-red-500/30 text-red-300 hover:text-red-200 border border-red-500/30 rounded-full text-sm font-medium transition-all duration-300"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <Flag className="w-4 h-4 mr-1" />
+              檢舉
+            </motion.a>
           </nav>
 
           {/* Mobile menu button */}
@@ -79,6 +94,18 @@ export default function Header() {
                   {item.name}
                 </a>
               ))}
+              
+              {/* 移動版檢舉連結 */}
+              <a
+                href="https://forms.gle/SAw9qmN2nkPmyQsTA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-3 py-2 bg-red-500/20 hover:bg-red-500/30 text-red-300 hover:text-red-200 border border-red-500/30 rounded-lg text-sm font-medium transition-all duration-300 w-fit"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Flag className="w-4 h-4 mr-2" />
+                檢舉問題 / 意見反饋
+              </a>
             </nav>
           </motion.div>
         )}
